@@ -1,0 +1,112 @@
+/* Reset και βασικά styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    min-height: 100vh;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    color: white;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Main */
+main {
+    padding: 20px;
+}
+
+main h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+    font-size: 1.8rem;
+}
+
+/* Module Cards */
+.modules {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+.module-card {
+    background: white;
+    border-radius: 15px;
+    padding: 40px 30px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.module-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.module-icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.module-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #1e3c72;
+}
+
+.module-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px;
+    color: white;
+    opacity: 0.8;
+    margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .modules {
+        grid-template-columns: 1fr;
+    }
+
+    .module-card {
+        padding: 30px 20px;
+    }
+}
