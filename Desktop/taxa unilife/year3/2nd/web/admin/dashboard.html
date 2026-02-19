@@ -3,42 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Διαχείριση Ειδικών Επιστημόνων - ΤΕΠΑΚ</title>
+    <title>Admin Dashboard</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Σύστημα Διαχείρισης Ειδικών Επιστημόνων</h1>
-            <p>Τεχνολογικό Πανεπιστήμιο Κύπρου</p>
-        </header>
 
-        <main>
-            <h2>Επιλέξτε Module</h2>
-            <div class="modules">
-                <a href="admin/index.html" class="module-card">
-                    <div class="module-icon">⚙️</div>
-                    <h3>Admin Module</h3>
-                    <p>Διαχείριση χρηστών, προσλήψεων και ρυθμίσεων συστήματος</p>
-                </a>
+    <header>
+        <h1>Πίνακας Ελέγχου Διαχειριστή</h1>
+    </header>
 
-                <a href="recruitment/index.html" class="module-card">
-                    <div class="module-icon">📋</div>
-                    <h3>Recruitment Module</h3>
-                    <p>Υποβολή και παρακολούθηση αιτήσεων υποψηφίων</p>
-                </a>
+    <nav>
+        <ul>
+            <li><a href="../public/index.html">Αρχική</a></li>
+            <li><a href="dashboard.html" class="active">Dashboard</a></li>
+            <li><a href="../recruitment/index.html">Recruitment</a></li>
+        </ul>
+    </nav>
 
-                <a href="enrollment/index.html" class="module-card">
-                    <div class="module-icon">🎓</div>
-                    <h3>Enrollment Module</h3>
-                    <p>Συγχρονισμός με LMS Moodle και διαχείριση πρόσβασης</p>
-                </a>
-            </div>
-        </main>
+    <main>
+        <section class="welcome-text">
+            <h2>Καλωσήρθες Admin</h2>
+            <p>Επίλεξε μια από τις παρακάτω λειτουργίες για τη διαχείριση του συστήματος.</p>
+        </section>
 
-        <footer>
-            <p>&copy; 2024 ΤΕΠΑΚ - Σύστημα Διαχείρισης ΕΕ</p>
-        </footer>
-    </div>
+        <section class="cards-container">
+            
+            <article class="card">
+                <h3>Manage Users</h3>
+                <p>Διαχείριση των χρηστών και των ρόλων τους.</p>
+                <a href="#" class="btn">Είσοδος</a>
+            </article>
+
+            <article class="card">
+                <h3>Manage Recruitment</h3>
+                <p>Ρυθμίσεις για τις αιτήσεις και τις προκηρύξεις.</p>
+                <a href="#" class="btn">Είσοδος</a>
+            </article>
+
+            <article class="card">
+                <h3>Configure System</h3>
+                <p>Βασικές ρυθμίσεις συστήματος και σύνδεση με Moodle.</p>
+                <a href="#" class="btn">Είσοδος</a>
+            </article>
+
+            <article class="card">
+                <h3>Report</h3>
+                <p>Στατιστικά στοιχεία αιτήσεων.</p>
+                <a href="#" class="btn">Είσοδος</a>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Εργασία 1 - Web Engineering 2026</p>
+    </footer>
+
 </body>
 </html>
