@@ -22,15 +22,15 @@ header {
 nav {
     background-color: #333;
     padding: 10px;
-    text-align: center; /* Στοίχιση στο κέντρο με απλό τρόπο */
+    text-align: center; /* Στοίχιση */
 }
 
 nav ul {
-    list-style-type: none; /* Βγάζει τις τελείες από τη λίστα */
+    list-style-type: none; 
 }
 
 nav li {
-    display: inline-block; /* Τα βάζει το ένα δίπλα στο άλλο */
+    display: inline-block;
     margin-right: 15px;
 }
 
@@ -45,7 +45,6 @@ nav a:hover, nav a.active {
     border-radius: 5px;
 }
 
-/* Κυρίως Περιεχόμενο */
 main {
     padding: 20px;
     text-align: center;
@@ -55,7 +54,6 @@ main {
     margin-bottom: 30px;
 }
 
-/* --- Το Component (Κάρτες) --- */
 .cards-container {
     margin: 0 auto;
     width: 90%;
@@ -67,12 +65,11 @@ main {
     padding: 20px;
     margin: 10px;
     border-radius: 5px;
-    display: inline-block; /* Μπαίνουν δίπλα-δίπλα */
-    width: 40%; /* Πιάνουν το 40% της οθόνης το καθένα */
-    vertical-align: top; /* Ευθυγράμμιση προς τα πάνω */
+    display: inline-block; 
+    width: 40%; 
+    vertical-align: top; 
 }
 
-/* Σύνθετος επιλογέας */
 .card h3 {
     color: #004080;
     margin-bottom: 10px;
