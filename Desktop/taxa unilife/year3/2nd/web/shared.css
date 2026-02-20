@@ -1,0 +1,295 @@
+/* ============================================================
+   shared.css — Κοινό stylesheet για τα modules ΤΕΠΑΚ ΕΕ
+   Χρήση: <link rel="stylesheet" href="../shared.css">
+   ============================================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* ── Header ── */
+header {
+    background-color: #1e3c72;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 0.95rem;
+    opacity: 0.85;
+}
+
+/* ── Nav ── */
+nav ul {
+    list-style: none;
+    display: flex;
+    background-color: #2a5298;
+    justify-content: center;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+}
+
+nav ul li a:hover {
+    background-color: #1e3c72;
+}
+
+nav ul li a.active {
+    background-color: #163060;
+    font-weight: bold;
+}
+
+/* ── Main ── */
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+main section {
+    margin-bottom: 30px;
+}
+
+main section h2 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #1e3c72;
+}
+
+/* ── Utilities ── */
+.hidden { display: none; }
+
+/* ── Button variants ── */
+.btn.success { background-color: #5cb85c; }
+.btn.success:hover { background-color: #4cae4c; }
+.btn.danger { background-color: #d9534f; }
+.btn.danger:hover { background-color: #c9302c; }
+.btn.sm { padding: 5px 10px; font-size: 0.82rem; }
+
+/* ── Search input ── */
+.search-input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+/* ── Page sections (JS-switched) ── */
+.page { margin-bottom: 30px; }
+.page h2 { font-size: 1.3rem; margin-bottom: 15px; color: #1e3c72; }
+
+/* ── Stats grid ── */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.stat-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+.stat-card p { font-size: 0.85rem; color: #666; margin-bottom: 8px; }
+.stat-card h3 { font-size: 2rem; color: #1e3c72; }
+.stat-card h3.green { color: #5cb85c; }
+.stat-card h3.red { color: #d9534f; }
+
+/* ── Progress bar ── */
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    height: 12px;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+.progress {
+    background-color: #1e3c72;
+    height: 100%;
+    width: 0%;
+}
+
+/* ── Toggle row ── */
+.toggle-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+
+/* ── Table status text ── */
+.text-green { color: #5cb85c; font-weight: bold; }
+.text-orange { color: #f0ad4e; font-weight: bold; }
+.text-red { color: #d9534f; }
+
+/* ── Warning title ── */
+.warning-title { color: #f0ad4e; margin-bottom: 15px; }
+
+/* ── Cards (dashboard) ── */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 25px 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+}
+
+.card:hover {
+    border-color: #1e3c72;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    color: #1e3c72;
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* ── Panel ── */
+.panel {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+/* ── Form ── */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 0.95rem;
+}
+
+.form-group input:disabled {
+    background-color: #f0f0f0;
+    color: #666;
+}
+
+/* ── Button ── */
+.btn {
+    background-color: #1e3c72;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+.btn:hover {
+    background-color: #163060;
+}
+
+/* ── Table ── */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f0f0f0;
+    font-size: 0.9rem;
+}
+
+/* ── Status Badges ── */
+.status-badge {
+    padding: 3px 10px;
+    border-radius: 10px;
+    background-color: #f0ad4e;
+    color: white;
+    font-size: 0.85rem;
+}
+
+.status-badge.approved {
+    background-color: #5cb85c;
+}
+
+.status-badge.rejected {
+    background-color: #d9534f;
+}
+
+/* ── Footer ── */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+    .card-container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+}
