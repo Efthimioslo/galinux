@@ -4,60 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../shared.css">
 </head>
 <body>
-
     <header>
         <h1>Πίνακας Ελέγχου Διαχειριστή</h1>
+        <p>Σύστημα Διαχείρισης Ειδικών Επιστημόνων</p>
     </header>
 
     <nav>
         <ul>
-            <li><a href="../public/index.html">Αρχική</a></li>
-            <li><a href="dashboard.html" class="active">Dashboard</a></li>
+            <li><a href="../index.html">Αρχική</a></li>
+            <li><a href="index.html" class="active">Admin</a></li>
             <li><a href="../recruitment/index.html">Recruitment</a></li>
+            <li><a href="../enrollment/index.html">Enrollment</a></li>
         </ul>
     </nav>
 
     <main>
-        <section class="welcome-text">
-            <h2>Καλωσήρθες Admin</h2>
-            <p>Επίλεξε μια από τις παρακάτω λειτουργίες για τη διαχείριση του συστήματος.</p>
-        </section>
+        <section>
+            <h2>Καλωσήρθες, Admin</h2>
+            <p style="color: #666; margin-bottom: 20px;">Επίλεξε μια από τις παρακάτω λειτουργίες για τη διαχείριση του συστήματος.</p>
+            <div class="card-container">
+                <article class="card">
+                    <h3>Manage Users</h3>
+                    <p>Διαχείριση χρηστών και ρόλων.</p>
+                    <br>
+                    <a href="#" class="btn">Είσοδος</a>
+                </article>
 
-        <section class="cards-container">
-            
-            <article class="card">
-                <h3>Manage Users</h3>
-                <p>Διαχείριση των χρηστών και των ρόλων τους.</p>
-                <a href="#" class="btn">Είσοδος</a>
-            </article>
+                <article class="card">
+                    <h3>Manage Recruitment</h3>
+                    <p>Ρυθμίσεις αιτήσεων και προκηρύξεων.</p>
+                    <br>
+                    <a href="#" class="btn">Είσοδος</a>
+                </article>
 
-            <article class="card">
-                <h3>Manage Recruitment</h3>
-                <p>Ρυθμίσεις για τις αιτήσεις και τις προκηρύξεις.</p>
-                <a href="#" class="btn">Είσοδος</a>
-            </article>
+                <article class="card">
+                    <h3>Configure System</h3>
+                    <p>Ρυθμίσεις συστήματος και σύνδεση με Moodle.</p>
+                    <br>
+                    <a href="#" class="btn">Είσοδος</a>
+                </article>
 
-            <article class="card">
-                <h3>Configure System</h3>
-                <p>Βασικές ρυθμίσεις συστήματος και σύνδεση με Moodle.</p>
-                <a href="#" class="btn">Είσοδος</a>
-            </article>
-
-            <article class="card">
-                <h3>Report</h3>
-                <p>Στατιστικά στοιχεία αιτήσεων.</p>
-                <a href="#" class="btn">Είσοδος</a>
-            </article>
-
+                <article class="card">
+                    <h3>Reports</h3>
+                    <p>Στατιστικά στοιχεία αιτήσεων.</p>
+                    <br>
+                    <a href="#" class="btn">Είσοδος</a>
+                </article>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>Εργασία 1 - Web Engineering 2026</p>
+        <p>&copy; 2026 ΤΕΠΑΚ - Σύστημα Διαχείρισης ΕΕ</p>
     </footer>
-
 </body>
 </html>
